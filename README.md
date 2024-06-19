@@ -1,12 +1,15 @@
 # vehicleTracker
 
-https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+ESP32 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+
+Useful ESP32 tutorial website: https://randomnerdtutorials.com/esp32-i2c-communication-arduino-ide/
 
 Write unit and which pins you plan to use for the subsystem:
+- Default pins for I2C are GPIO21(SDA) and GPIO22(SCL)
 
 
-
-COST: https://docs.google.com/spreadsheets/d/1ha0QW2Twl-Rdmpq9GGSAH3WqHdwXN5mQoQr_CWo1MlU/edit?gid=0#gid=0
+COST:
+- https://docs.google.com/spreadsheets/d/1ha0QW2Twl-Rdmpq9GGSAH3WqHdwXN5mQoQr_CWo1MlU/edit?gid=0#gid=0
 
 Accelerometer:
 Crash Detecion calculator: https://www.omnicalculator.com/physics/car-crash-force
