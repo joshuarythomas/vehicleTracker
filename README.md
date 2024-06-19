@@ -35,6 +35,20 @@ Pin out pic
 <img width="792" alt="Screenshot 2024-06-19 at 11 48 03 PM" src="https://github.com/joshuarythomas/vehicleTracker/assets/68773192/d6efaf53-195d-4c3f-9733-72af7ba70f9d">
 Power supply decoupling capacitors (100 nF ceramic, 10 μF aluminum) should be placed as near as possible to pin 14 of the device (common design practice).
 
+SFH 5701 A01
+(Light sensor)
+Left number is light sensor pin and right number is other pins
+1. -> ADC input
+2. -> Pin 2 (Vdd)
+Connect Rload between GND and ADC input
+Notes:
+- Pin 1 is anode(output) and Pin 2 is cathode (Vdd)
+- We could include LPF.
+
+Pin out pic:
+![image](https://github.com/joshuarythomas/vehicleTracker/assets/68773192/1149a803-13f7-4a12-92c1-72cc0ad02fb9)
+
+
 COST:
 - https://docs.google.com/spreadsheets/d/1ha0QW2Twl-Rdmpq9GGSAH3WqHdwXN5mQoQr_CWo1MlU/edit?gid=0#gid=0
 
@@ -45,6 +59,8 @@ Crash Detecion calculator: https://www.omnicalculator.com/physics/car-crash-forc
 - Would be good to have accelerometer that can measure up to 30g I reckon for our purposes.
 
 H3LIS100DL
+- Datasheet: https://au.mouser.com/datasheet/2/389/h3lis100dl-1849125.pdf
+- Mouser link: https://au.mouser.com/ProductDetail/STMicroelectronics/H3LIS100DLTR?qs=v3MacVxtdDLHj8sdza6BGw%3D%3D
 - In stock
 - up to +- 100g
 - 3-axis very good
@@ -55,7 +71,22 @@ H3LIS100DL
 - only 8 bit resolution not great but its the cheapest
 - $8 by far the cheapest
 - Has PCB symbol and footprint
-- Datasheet: https://au.mouser.com/datasheet/2/389/h3lis100dl-1849125.pdf
-- Mouser link: https://au.mouser.com/ProductDetail/STMicroelectronics/H3LIS100DLTR?qs=v3MacVxtdDLHj8sdza6BGw%3D%3D
+- 
+
+Light Sensor
+SFH 5701 A01
+- Datasheet: https://au.mouser.com/datasheet/2/588/prd_pim_datasheet_5690474_EN_pdf-3419424.pdf
+- Appendix sheet: https://look.ams-osram.com/m/6d9facb9506ab4a2/original/Ambient-light-sensor-SFH-5701.pdf
+- Mouser link: https://au.mouser.com/ProductDetail/ams-OSRAM/SFH-5701-A01?qs=sGAEpiMZZMsMHNolIrhXrHsmG3VqP4YXp4aw0dWdt7mNf16qlKnKtw%3D%3D
+- Has PCB symbol and footprint
+- In stock
+- Cheap
+- Analog
+- Helpful setup schematic on appendix doc
+- Photodiode
+- Will need a load resistor
+Helpful note: https://electronics.stackexchange.com/questions/192264/how-to-compute-bias-resistor-for-phototransistor-value
+
+
 
 
