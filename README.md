@@ -49,8 +49,30 @@ Pin out pic:
 ![image](https://github.com/joshuarythomas/vehicleTracker/assets/68773192/1149a803-13f7-4a12-92c1-72cc0ad02fb9)
 
 
+TLA2024IRUGT (ADC) pin out
+Left is ADC pin numnber
+Right is either ESP32 or peripheral - if it just says pin X then it refers to pin X of the ESP32 otherwise it specifies peripheral
+1. -> Pin 1 (GND)
+2. NC
+3. NC
+4. -> SFH 5701 A01 Pin 1 
+5. -> External breakout
+6. -> External breakout
+7. -> External breakout
+8. -> Pin 2 (Vdd) with decoupling Cap
+9. -> Pin 33 (SDA)
+10. -> Pin 36 (SCL)
+
+Pin out pic:
+![image](https://github.com/joshuarythomas/vehicleTracker/assets/68773192/6d40b782-5c36-4a83-b890-f431cd2af26b)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 COST:
 - https://docs.google.com/spreadsheets/d/1ha0QW2Twl-Rdmpq9GGSAH3WqHdwXN5mQoQr_CWo1MlU/edit?gid=0#gid=0
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Accelerometer:
 Crash Detecion calculator: https://www.omnicalculator.com/physics/car-crash-force
@@ -71,7 +93,9 @@ H3LIS100DL
 - only 8 bit resolution not great but its the cheapest
 - $8 by far the cheapest
 - Has PCB symbol and footprint
-- 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Light Sensor
 SFH 5701 A01
@@ -87,6 +111,28 @@ SFH 5701 A01
 - Will need a load resistor
 Helpful note: https://electronics.stackexchange.com/questions/192264/how-to-compute-bias-resistor-for-phototransistor-value
 
+Light sensor calcs:
+- Assuming we'll just power using 3V3.
+- 1.45V minimum headroom (VDD – VOUT) so if necessary reduce Rload.
+- So Vdd - Vout > 1.45V so Vout < 1.85V.
+- The using f3db = 1/(2(pi)ReqC) where Req is the equivalent Req = Rload + R
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ADC
+TLA2024IRUGT
+- Datasheet: https://www.ti.com/lit/ds/symlink/tla2024.pdf?ts=1718851900522&ref_url=https%253A%252F%252Fau.mouser.com%252F
+- Cheap
+- In stock
+- 12 bit res good enough
+- 4 channel sweet
+- PCB footprint + symbol check
+- I2C
+- 2V to 5.5V Vdd
+- delta sigma is fast
+- up to 3.3 kSPS should be fast enough
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
