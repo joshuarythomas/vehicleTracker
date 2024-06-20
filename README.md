@@ -10,8 +10,11 @@ Write unit and which pins you plan to use for the subsystem:
 - SCL = PIN 36
 
 H3LIS100DL (accelerometer) pin connection
+
 NC = Not connected it can be left floating
-Tghe left hand side numbers are the H3LIS100DL pins and the right hand side are the ESP32 pin numbers
+
+The left hand side numbers are the H3LIS100DL pins and the right hand side are the ESP32 pin numbers
+
 If the SA0 pad is connected to ground, the LSB value is ‘0’ (address is then 0011000b)
 
 1. -> Pin 2 (Vdd)
@@ -35,8 +38,8 @@ Pin out pic
 <img width="792" alt="Screenshot 2024-06-19 at 11 48 03 PM" src="https://github.com/joshuarythomas/vehicleTracker/assets/68773192/d6efaf53-195d-4c3f-9733-72af7ba70f9d">
 Power supply decoupling capacitors (100 nF ceramic, 10 μF aluminum) should be placed as near as possible to pin 14 of the device (common design practice).
 
-SFH 5701 A01
-(Light sensor)
+SFH 5701 A01 (Light sensor)
+
 Left number is light sensor pin and right number is other pins
 1. -> ADC input
 2. -> Pin 2 (Vdd)
@@ -75,12 +78,7 @@ COST:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Accelerometer:
-Crash Detecion calculator: https://www.omnicalculator.com/physics/car-crash-force
-- This estimates that you can experience around 50g when driving at 50kph for a person weighing 75kg with a seat belt!
-- This website sugests that around 30 g's is typical in crash: https://jrlawfirm.com/blog/auto-accidents/car-accident-g-force/#:~:text=According%20to%20GSU's%20HyperPhysics%20Project,collision%20with%20a%20fixed%20object.
-- Would be good to have accelerometer that can measure up to 30g I reckon for our purposes.
-
-H3LIS100DL
+- H3LIS100DL
 - Datasheet: https://au.mouser.com/datasheet/2/389/h3lis100dl-1849125.pdf
 - Mouser link: https://au.mouser.com/ProductDetail/STMicroelectronics/H3LIS100DLTR?qs=v3MacVxtdDLHj8sdza6BGw%3D%3D
 - In stock
@@ -93,12 +91,16 @@ H3LIS100DL
 - only 8 bit resolution not great but its the cheapest
 - $8 by far the cheapest
 - Has PCB symbol and footprint
+- Crash Detecion calculator: https://www.omnicalculator.com/physics/car-crash-force
+- This estimates that you can experience around 50g when driving at 50kph for a person weighing 75kg with a seat belt!
+- This website sugests that around 30 g's is typical in crash: https://jrlawfirm.com/blog/auto-accidents/car-accident-g-force/#:~:text=According%20to%20GSU's%20HyperPhysics%20Project,collision%20with%20a%20fixed%20object.
+- Good to have accelerometer that can measure up to at least 30g I reckon for our purposes.
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Light Sensor
-SFH 5701 A01
+- SFH 5701 A01
 - Datasheet: https://au.mouser.com/datasheet/2/588/prd_pim_datasheet_5690474_EN_pdf-3419424.pdf
 - Appendix sheet: https://look.ams-osram.com/m/6d9facb9506ab4a2/original/Ambient-light-sensor-SFH-5701.pdf
 - Mouser link: https://au.mouser.com/ProductDetail/ams-OSRAM/SFH-5701-A01?qs=sGAEpiMZZMsMHNolIrhXrHsmG3VqP4YXp4aw0dWdt7mNf16qlKnKtw%3D%3D
@@ -111,7 +113,7 @@ SFH 5701 A01
 - Will need a load resistor
 Helpful note: https://electronics.stackexchange.com/questions/192264/how-to-compute-bias-resistor-for-phototransistor-value
 
-Light sensor calcs:
+Calculations: Light Sensor:
 - Assuming we'll just power using 3V3.
 - 1.45V minimum headroom (VDD – VOUT) so if necessary reduce Rload.
 - So Vdd - Vout > 1.45V so Vout < 1.85V.
@@ -120,7 +122,7 @@ Light sensor calcs:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ADC
-TLA2024IRUGT
+- TLA2024IRUGT
 - Datasheet: https://www.ti.com/lit/ds/symlink/tla2024.pdf?ts=1718851900522&ref_url=https%253A%252F%252Fau.mouser.com%252F
 - Cheap
 - In stock
