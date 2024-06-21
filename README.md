@@ -145,4 +145,6 @@ ADC
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Choosing capacitors
+- this link says go for thin film over ceramic: https://electronics.stackexchange.com/questions/69919/ceramic-vs-film-capacitor-which-one-is-preferred-in-audio-circuits
 
