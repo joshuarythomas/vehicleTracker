@@ -145,8 +145,8 @@ ADC
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-LCL86L
-
+GPS Module
+- LCL86L 
 - Datasheet: [quectel_lc86l_hardware_design_v1-0.pdf](https://github.com/user-attachments/files/15923197/quectel_lc86l_hardware_design_v1-0.pdf)
 - Mouser link: https://www.mouser.com/ProductDetail/Quectel/LC86LICMD?qs=iLbezkQI%252BsiFPFQjIwBL1Q%3D%3D
 - Has footprint
