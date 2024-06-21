@@ -145,6 +145,17 @@ ADC
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+LCL86L
+
+- Datasheet: [quectel_lc86l_hardware_design_v1-0.pdf](https://github.com/user-attachments/files/15923197/quectel_lc86l_hardware_design_v1-0.pdf)
+- Mouser link: https://www.mouser.com/ProductDetail/Quectel/LC86LICMD?qs=iLbezkQI%252BsiFPFQjIwBL1Q%3D%3D
+- Has footprint
+- Documentation seems fine
+- $20 the cheapest one that seems decent.
+- UART
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Choosing capacitors
 - this link says go for thin film over ceramic: https://electronics.stackexchange.com/questions/69919/ceramic-vs-film-capacitor-which-one-is-preferred-in-audio-circuits
 - This link suggests ceramic should be fine: https://resources.altium.com/p/which-type-capacitor-should-you-use
