@@ -56,8 +56,8 @@ TLA2024IRUGT (ADC) pin out
 Left is ADC pin numnber
 Right is either ESP32 or peripheral - if it just says pin X then it refers to pin X of the ESP32 otherwise it specifies peripheral
 1. -> Pin 1 (GND)
-2. NC
-3. NC
+2. NC - leave floating!
+3. -> Pin 1 (GND)
 4. -> SFH 5701 A01 Pin 1 
 5. -> External breakout
 6. -> External breakout
@@ -65,6 +65,8 @@ Right is either ESP32 or peripheral - if it just says pin X then it refers to pi
 8. -> Pin 2 (Vdd) with decoupling Cap
 9. -> Pin 33 (SDA)
 10. -> Pin 36 (SCL)
+
+Float unused analog inputs, or tie unused analog inputs to GND.
 
 Pin out pic:
 ![image](https://github.com/joshuarythomas/vehicleTracker/assets/68773192/6d40b782-5c36-4a83-b890-f431cd2af26b)
@@ -115,15 +117,21 @@ Helpful note: https://electronics.stackexchange.com/questions/192264/how-to-comp
 
 Calculations: Light Sensor:
 - Assuming we'll just power using 3V3.
+- 90% of FS (3.3V) = 2.97V
+- Assumign we get no more than 10000lx correspons to max Iout = 10mA
 - 1.45V minimum headroom (VDD – VOUT) so if necessary reduce Rload.
 - So Vdd - Vout > 1.45V so Vout < 1.85V.
+- So Rload = 1.85V / 10mA = 185 ohms
 - The using f3db = 1/(2(pi)ReqC) where Req is the equivalent Req = Rload + R
+- Choose C = 330pf why not and F3db = 50Hz
+- So R = 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ADC
 - TLA2024IRUGT
 - Datasheet: https://www.ti.com/lit/ds/symlink/tla2024.pdf?ts=1718851900522&ref_url=https%253A%252F%252Fau.mouser.com%252F
+- Mouser link: https://au.mouser.com/ProductDetail/Texas-Instruments/TLA2024IRUGT?qs=chTDxNqvsylxt6cbA39OGw%3D%3D
 - Cheap
 - In stock
 - 12 bit res good enough
