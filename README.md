@@ -153,6 +153,19 @@ GPS Module
 - Documentation seems fine
 - $20 the cheapest one that seems decent.
 - UART
+- Size is small
+- Horizontal positioning accuracy: 2.5m
+- Update rate: 1 Hz (max. 10 Hz) good enough for slow moving vehicles
+- 3.3V 30mA current draw pretty standard for gps power consumption
+- 37 channels hoefully it will be fine around buildings.
+- TTFF: 35 seconds
+- sensitivity is around -140dBm good enough.
+- Supports Galileo
+
+GPS Selection guide:
+- 
+- https://www.sparkfun.com/GPS_Guide
+
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
