@@ -166,8 +166,23 @@ GPS Selection guide:
 - 
 - https://www.sparkfun.com/GPS_Guide
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Micro switch
+- SAJ25YXRHL147SDTSEQ
+- Datasheet: https://au.mouser.com/datasheet/2/418/8/ENG_DS_2351450_A-2887325.pdf
+- Mouser link: https://au.mouser.com/ProductDetail/TE-Connectivity-Alcoswitch/SAJ25YXRHL147SDTSEQ?qs=7MVldsJ5Uaw0Eh4bvIT51g%3D%3D
+- $1.70
+
+Mechanical Design
+- Mount the micro switch on the PCB or the internal surface of the casing such that the lever is depressed when the casing is closed.
+- Ensure the lever is released when the casing is opened.
+Lever Actuation:
+- Position the switch so that the lever aligns with a part of the casing cover. When the cover is closed, it should press down on the lever, keeping the switch in the "closed" position.
+- When the cover is opened, the lever should be released, putting the switch in the "open" position.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Choosing capacitors
 - this link says go for thin film over ceramic: https://electronics.stackexchange.com/questions/69919/ceramic-vs-film-capacitor-which-one-is-preferred-in-audio-circuits
