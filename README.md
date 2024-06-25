@@ -2,6 +2,8 @@
 
 ESP32 Datasheet: https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
 
+Specific MCU to be used: https://au.mouser.com/ProductDetail/Espressif-Systems/ESP32-WROOM-32E-N8R2?qs=By6Nw2ByBD0mvGJSS3Ohlw%3D%3D&mgh=1&vip=1&utm_id=17753636782&gad_source=1&gclid=CjwKCAjw1emzBhB8EiwAHwZZxep8AOoPuK3Hm7XDP1fHObwfQI1y7EqK866hRqbxujMWHWSXsl5MaxoCb60QAvD_BwE
+
 Useful ESP32 tutorial website: https://randomnerdtutorials.com/esp32-i2c-communication-arduino-ide/
 
 Write unit and which pins you plan to use for the subsystem:
