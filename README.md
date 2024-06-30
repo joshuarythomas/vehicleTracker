@@ -6,6 +6,9 @@ Specific MCU to be used: https://au.mouser.com/ProductDetail/Espressif-Systems/E
 
 Useful ESP32 tutorial website: https://randomnerdtutorials.com/esp32-i2c-communication-arduino-ide/
 
+For SPI stuff:
+https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/spi_master.html
+
 Write unit and which pins you plan to use for the subsystem:
 - Default pins for I2C are GPIO21(SDA = PIN 33) and GPIO22(SCL = PIN 36)
 - SDA = PIN 33
