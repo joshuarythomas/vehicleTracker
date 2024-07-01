@@ -1,5 +1,6 @@
 # vehicleTracker
 
+ESP32 related stuff
 ESP32 Datasheet: https://au.mouser.com/datasheet/2/891/esp32_wroom_32e_esp32_wroom_32ue_datasheet_en-1855879.pdf
 
 Specific MCU to be used: https://au.mouser.com/ProductDetail/Espressif-Systems/ESP32-WROOM-32E-N8R2?qs=By6Nw2ByBD0mvGJSS3Ohlw%3D%3D&mgh=1&vip=1&utm_id=17753636782&gad_source=1&gclid=CjwKCAjw1emzBhB8EiwAHwZZxep8AOoPuK3Hm7XDP1fHObwfQI1y7EqK866hRqbxujMWHWSXsl5MaxoCb60QAvD_BwE
@@ -13,6 +14,16 @@ Write unit and which pins you plan to use for the subsystem:
 - Default pins for I2C are GPIO21(SDA = PIN 33) and GPIO22(SCL = PIN 36)
 - SDA = PIN 33
 - SCL = PIN 36
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Testing
+- USB to serial convert.
+- Availabel at: AliExpress for $1.5
+- 10 day shiping time!
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 H3LIS100DL (accelerometer) pin connection
 
