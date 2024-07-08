@@ -20,7 +20,8 @@ Write unit and which pins you plan to use for the subsystem:
 Testing
 - USB to serial convert.
 - Availabel at: AliExpress for $1.5
-- 10 day shiping time!
+- 10 day shipping time!
+- CAN coding: https://www.instructables.com/CAN-Bus-Sniffing-and-Broadcasting-with-Arduino/
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
